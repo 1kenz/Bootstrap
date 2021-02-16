@@ -11,14 +11,58 @@
             integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
             crossorigin="anonymous"
         />
+        <style>
+            .box {
+                height: 200px;
+            }
+            div span {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                background: red;
+            }
+        </style>
     </head>
     <body>
         <!-- <h1>Ken</h1> -->
-        <div class="container bg-danger">
+        <!-- <div class="container bg-danger">
             <h1>Container</h1>
+        </div> -->
+
+        <!-- <div class="container">
+            <div class="row">
+                <div class="box bg-danger col">a</div>
+                <div class="box bg-primary col">b</div>
+                <div class="box bg-success col">c</div>
+            </div>
+        </div> -->
+
+        <!-- Align -->
+        <!-- <div
+            class="row align-items-center justify-content-center bg-dark"
+            style="height: 600px"
+        >
+            <div class="box bg-danger col-2"></div>
+            <div class="box bg-primary col-2"></div>
+            <div class="box bg-success col-2"></div>
+        </div> -->
+
+        <!-- Flexbox -->
+        <!-- <div
+            <!--
+            class="d-flex justify-content-center align-items-center bg-dark"
+            --
+        > -->
+        <div
+            class="d-flex justify-content-center align-items-center flex-column bg-dark"
+            style="height: 600px; width: 600px"
+        >
+            <span class="align-self-center"></span>
+            <span class="align-self-end"></span>
+            <span class="align-self-start"></span>
         </div>
 
-        <!-- Bootstrap for javascript -->
+        <!-- Bootstrap javascript -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
             integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
